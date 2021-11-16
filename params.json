@@ -219,7 +219,8 @@
       }
     }
   },
-  "name": "Haiku Starter",
+  "name": "Haiku Starter for Administrator",
+  "projectStatus": "Sandbox",
   "imgPattern": 8,
   "metrics": {
     "probes": [],
@@ -276,11 +277,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 137,
+    "versionNumber": 138,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1637024542569
+    "lastModifiedOn": 1637024546194
   },
   "creationTag": {
     "versionNumber": 0,
