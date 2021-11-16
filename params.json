@@ -220,7 +220,8 @@
       }
     }
   },
-  "name": "Haiku Starter for Administrator (test-branch)",
+  "name": "Haiku Starter for Administrator",
+  "projectStatus": "Sandbox",
   "imgPattern": 8,
   "metrics": {
     "probes": [],
@@ -277,11 +278,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 144,
+    "versionNumber": 145,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1637027615295
+    "lastModifiedOn": 1637027951814
   },
   "creationTag": {
     "versionNumber": 0,
@@ -291,12 +292,11 @@
     "lastModifiedOn": 1498738782025
   },
   "description": "",
-  "shortDesc": "This project works with the data used in the [Basics 101-103 courses](https://academy.dataiku.com/page/core-concepts), and is a starting point for a number of learning materials.\n\nThe project *HAIKU_STARTER_FOR_ADMINISTRATOR_TEST_BRANCH* was copied from *DKU_HAIKU_STARTER* by Administrator on Nov 15th 2021",
+  "shortDesc": "This project works with the data used in the [Basics 101-103 courses](https://academy.dataiku.com/page/core-concepts), and is a starting point for a number of learning materials.\n",
   "tags": [
     "tutorial",
     "downloads",
-    "section:General Topics",
-    "duplicated"
+    "section:General Topics"
   ],
   "customFields": {},
   "checklists": {
