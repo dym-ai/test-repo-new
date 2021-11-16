@@ -3,7 +3,7 @@
   "rebuildBehavior": "EXPLICIT",
   "name": "Prediction (LOGISTIC_REGRESSION) on training",
   "contentType": "prediction/py_memory",
-  "activeVersion": "1637027214972",
+  "activeVersion": "1637027694247",
   "conditionalOutputs": [],
   "partitioning": {
     "ignoreNonMatchingFile": false,
@@ -15,7 +15,7 @@
     "rebuildBehavior": "NORMAL",
     "crossProjectBuildBehavior": "DEFAULT"
   },
-  "lastExportedFrom": "A-DKU_HAIKU_STARTER-EVay9EtQ-58YQqY0Z-s2-pp2-m1",
+  "lastExportedFrom": "A-HAIKU_STARTER_FOR_ADMINISTRATOR_TEST_BRANCH-EVay9EtQ-58YQqY0Z-s3-pp1-m1",
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -448,11 +448,11 @@
         },
         "loss": {
           "values": {
-            "exponential": {
-              "enabled": false
-            },
             "deviance": {
               "enabled": true
+            },
+            "exponential": {
+              "enabled": false
             }
           }
         },
@@ -560,10 +560,10 @@
         },
         "loss": {
           "values": {
-            "lad": {
+            "huber": {
               "enabled": false
             },
-            "huber": {
+            "lad": {
               "enabled": false
             },
             "ls": {
@@ -608,21 +608,21 @@
         },
         "criterion": {
           "values": {
-            "gini": {
-              "enabled": true
-            },
             "entropy": {
               "enabled": false
+            },
+            "gini": {
+              "enabled": true
             }
           }
         },
         "splitter": {
           "values": {
-            "random": {
-              "enabled": false
-            },
             "best": {
               "enabled": true
+            },
+            "random": {
+              "enabled": false
             }
           }
         },
@@ -663,21 +663,21 @@
         },
         "criterion": {
           "values": {
-            "gini": {
-              "enabled": true
-            },
             "entropy": {
               "enabled": false
+            },
+            "gini": {
+              "enabled": true
             }
           }
         },
         "splitter": {
           "values": {
-            "random": {
-              "enabled": false
-            },
             "best": {
               "enabled": true
+            },
+            "random": {
+              "enabled": false
             }
           }
         },
@@ -763,11 +763,11 @@
             "elasticnet": {
               "enabled": false
             },
-            "l2": {
-              "enabled": false
-            },
             "l1": {
               "enabled": true
+            },
+            "l2": {
+              "enabled": false
             }
           }
         },
@@ -798,11 +798,11 @@
       "sgd_classifier": {
         "loss": {
           "values": {
-            "modified_huber": {
-              "enabled": false
-            },
             "log": {
               "enabled": true
+            },
+            "modified_huber": {
+              "enabled": false
             }
           }
         },
@@ -811,11 +811,11 @@
             "elasticnet": {
               "enabled": false
             },
-            "l2": {
-              "enabled": false
-            },
             "l1": {
               "enabled": true
+            },
+            "l2": {
+              "enabled": false
             }
           }
         },
@@ -870,11 +870,11 @@
         "multi_class": "ovr",
         "penalty": {
           "values": {
-            "l2": {
-              "enabled": true
-            },
             "l1": {
               "enabled": false
+            },
+            "l2": {
+              "enabled": true
             }
           }
         },
@@ -961,11 +961,11 @@
             "auto": {
               "enabled": false
             },
-            "scale": {
-              "enabled": true
-            },
             "custom": {
               "enabled": false
+            },
+            "scale": {
+              "enabled": true
             }
           }
         },
@@ -987,14 +987,14 @@
         },
         "kernel": {
           "values": {
-            "rbf": {
-              "enabled": true
-            },
             "linear": {
               "enabled": false
             },
             "poly": {
               "enabled": false
+            },
+            "rbf": {
+              "enabled": true
             },
             "sigmoid": {
               "enabled": false
@@ -1028,11 +1028,11 @@
             "auto": {
               "enabled": false
             },
-            "scale": {
-              "enabled": true
-            },
             "custom": {
               "enabled": false
+            },
+            "scale": {
+              "enabled": true
             }
           }
         },
@@ -1054,14 +1054,14 @@
         },
         "kernel": {
           "values": {
-            "rbf": {
-              "enabled": true
-            },
             "linear": {
               "enabled": false
             },
             "poly": {
               "enabled": false
+            },
+            "rbf": {
+              "enabled": true
             },
             "sigmoid": {
               "enabled": false
@@ -1247,29 +1247,29 @@
         },
         "booster": {
           "values": {
-            "gbtree": {
-              "enabled": true
-            },
             "dart": {
               "enabled": false
+            },
+            "gbtree": {
+              "enabled": true
             }
           }
         },
         "objective": {
           "values": {
-            "reg_linear": {
-              "enabled": true
-            },
-            "reg_logistic": {
-              "enabled": false
-            },
-            "reg_gamma": {
+            "binary_logistic": {
               "enabled": false
             },
             "multi_softprob": {
               "enabled": false
             },
-            "binary_logistic": {
+            "reg_gamma": {
+              "enabled": false
+            },
+            "reg_linear": {
+              "enabled": true
+            },
+            "reg_logistic": {
               "enabled": false
             }
           }
@@ -1635,7 +1635,7 @@
         "strategy": "GRID",
         "bayesianOptimizer": "SCIKIT_OPTIMIZE",
         "randomized": true,
-        "seed": 0,
+        "seed": 1337,
         "nIter": 0,
         "nIterRandom": 10,
         "timeout": 0,
@@ -1788,11 +1788,11 @@
     "labels": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1637027223744
+    "lastModifiedOn": 1637027694387
   },
   "creationTag": {
     "versionNumber": 0,
