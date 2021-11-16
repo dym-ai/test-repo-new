@@ -220,8 +220,7 @@
       }
     }
   },
-  "name": "Haiku Starter for Administrator",
-  "projectStatus": "Sandbox",
+  "name": "Haiku Starter for Administrator (prune-flow)",
   "imgPattern": 8,
   "metrics": {
     "probes": [],
@@ -278,11 +277,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 139,
+    "versionNumber": 141,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1637024588407
+    "lastModifiedOn": 1637024679681
   },
   "creationTag": {
     "versionNumber": 0,
@@ -292,11 +291,12 @@
     "lastModifiedOn": 1498738782025
   },
   "description": "",
-  "shortDesc": "This project works with the data used in the [Basics 101-103 courses](https://academy.dataiku.com/page/core-concepts), and is a starting point for a number of learning materials.\n",
+  "shortDesc": "This project works with the data used in the [Basics 101-103 courses](https://academy.dataiku.com/page/core-concepts), and is a starting point for a number of learning materials.\n\nThe project *HAIKU_STARTER_FOR_ADMINISTRATOR_PRUNE_FLOW* was copied from *DKU_HAIKU_STARTER* by Administrator on Nov 15th 2021",
   "tags": [
     "tutorial",
     "downloads",
-    "section:General Topics"
+    "section:General Topics",
+    "duplicated"
   ],
   "customFields": {},
   "checklists": {
