@@ -3,7 +3,7 @@
   "rebuildBehavior": "EXPLICIT",
   "name": "Prediction (RIDGE_REGRESSION) on training",
   "contentType": "prediction/py_memory",
-  "activeVersion": "initial",
+  "activeVersion": "1637084040089",
   "conditionalOutputs": [],
   "partitioning": {
     "ignoreNonMatchingFile": false,
@@ -15,7 +15,7 @@
     "rebuildBehavior": "NORMAL",
     "crossProjectBuildBehavior": "DEFAULT"
   },
-  "lastExportedFrom": "A-DKU_HAIKU_STARTER-9Q9GK4Kz-jKdgdhKN-s1-pp2-m1",
+  "lastExportedFrom": "A-HAIKU_STARTER_FOR_ADMINISTRATOR_TEST_BRANCH_1-9Q9GK4Kz-jKdgdhKN-s2-pp1-m1",
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -1787,11 +1787,11 @@
     "labels": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1637083908240
+    "lastModifiedOn": 1637084040229
   },
   "creationTag": {
     "versionNumber": 0,
