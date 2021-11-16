@@ -4,29 +4,94 @@
   },
   "modeling": {
     "computeLearningCurves": false,
-    "max_ensemble_nodes_serialized": 0,
+    "max_ensemble_nodes_serialized": 6000,
     "pluginAlgoCustomGridSearch": false,
-    "ridge_grid": {
-      "alpha": {
+    "rf_regressor_grid": {
+      "max_features": {
         "randomMode": "RANGE",
         "values": [
-          0.1,
-          1.0,
-          3.0
+          5
         ],
         "limit": {
-          "min": 1.0E-23
+          "min": 1
         },
         "range": {
-          "scaling": "LOGARITHMIC",
-          "min": 0.1,
-          "max": 3.0,
+          "scaling": "LINEAR",
+          "min": 1,
+          "max": 20,
           "nbValues": 3
         },
         "gridMode": "EXPLICIT"
       },
-      "alphaMode": "MANUAL",
-      "enabled": true
+      "max_feature_prop": {
+        "randomMode": "RANGE",
+        "values": [
+          0.3
+        ],
+        "limit": {
+          "min": 1.0E-23,
+          "max": 1.0
+        },
+        "range": {
+          "scaling": "LINEAR",
+          "min": 0.1,
+          "max": 0.7,
+          "nbValues": 3
+        },
+        "gridMode": "EXPLICIT"
+      },
+      "n_jobs": 1,
+      "n_estimators": {
+        "randomMode": "RANGE",
+        "values": [
+          100
+        ],
+        "limit": {
+          "min": 1
+        },
+        "range": {
+          "scaling": "LINEAR",
+          "min": 80,
+          "max": 200,
+          "nbValues": 3
+        },
+        "gridMode": "EXPLICIT"
+      },
+      "selection_mode": "auto",
+      "min_samples_leaf": {
+        "randomMode": "RANGE",
+        "values": [
+          10
+        ],
+        "limit": {
+          "min": 1
+        },
+        "range": {
+          "scaling": "LINEAR",
+          "min": 1,
+          "max": 20,
+          "nbValues": 3
+        },
+        "gridMode": "EXPLICIT"
+      },
+      "enabled": true,
+      "max_tree_depth": {
+        "randomMode": "RANGE",
+        "values": [
+          6,
+          14
+        ],
+        "limit": {
+          "min": 1
+        },
+        "range": {
+          "scaling": "LINEAR",
+          "min": 10,
+          "max": 20,
+          "nbValues": 3
+        },
+        "gridMode": "EXPLICIT"
+      }
     },
     "metrics": {
       "customEvaluationMetricGIB": true,
@@ -61,10 +126,10 @@
       "nContainers": 4
     },
     "skipExpensiveReports": false,
-    "algorithm": "RIDGE_REGRESSION",
-    "gridLength": 3
+    "algorithm": "RANDOM_FOREST_REGRESSION",
+    "gridLength": 2
   },
-  "generatingModelId": "A-DKU_HAIKU_STARTER-9Q9GK4Kz-jKdgdhKN-s1-pp2-m1",
+  "generatingModelId": "A-HAIKU_STARTER_FOR_ADMINISTRATOR_TEST_BRANCH_1-9Q9GK4Kz-jKdgdhKN-s2-pp1-m1",
   "preprocessing": {
     "reduce": {
       "kept_variance": 0.0,
@@ -98,7 +163,7 @@
         "min_samples": 10,
         "missing_impute_with": "MODE",
         "role": "INPUT",
-        "dummy_drop": "DROP",
+        "dummy_drop": "NONE",
         "dummy_clip": "MAX_NB_CATEGORIES",
         "cumulative_proportion": 0.95,
         "sendToInput": "main",
@@ -121,7 +186,7 @@
         "min_samples": 10,
         "missing_impute_with": "MODE",
         "role": "INPUT",
-        "dummy_drop": "DROP",
+        "dummy_drop": "NONE",
         "dummy_clip": "MAX_NB_CATEGORIES",
         "cumulative_proportion": 0.95,
         "sendToInput": "main",
@@ -144,7 +209,7 @@
         "min_samples": 10,
         "missing_impute_with": "MODE",
         "role": "INPUT",
-        "dummy_drop": "DROP",
+        "dummy_drop": "NONE",
         "dummy_clip": "MAX_NB_CATEGORIES",
         "cumulative_proportion": 0.95,
         "sendToInput": "main",
@@ -167,7 +232,7 @@
         "min_samples": 10,
         "missing_impute_with": "MODE",
         "role": "INPUT",
-        "dummy_drop": "DROP",
+        "dummy_drop": "NONE",
         "dummy_clip": "MAX_NB_CATEGORIES",
         "cumulative_proportion": 0.95,
         "sendToInput": "main",
@@ -211,7 +276,7 @@
         "min_samples": 10,
         "missing_impute_with": "MODE",
         "role": "INPUT",
-        "dummy_drop": "DROP",
+        "dummy_drop": "NONE",
         "dummy_clip": "MAX_NB_CATEGORIES",
         "cumulative_proportion": 0.95,
         "sendToInput": "main",
@@ -234,7 +299,7 @@
         "min_samples": 10,
         "missing_impute_with": "MODE",
         "role": "INPUT",
-        "dummy_drop": "DROP",
+        "dummy_drop": "NONE",
         "dummy_clip": "MAX_NB_CATEGORIES",
         "cumulative_proportion": 0.95,
         "sendToInput": "main",
@@ -257,7 +322,7 @@
         "min_samples": 10,
         "missing_impute_with": "MODE",
         "role": "INPUT",
-        "dummy_drop": "DROP",
+        "dummy_drop": "NONE",
         "dummy_clip": "MAX_NB_CATEGORIES",
         "cumulative_proportion": 0.95,
         "sendToInput": "main",
@@ -280,7 +345,7 @@
         "min_samples": 10,
         "missing_impute_with": "MODE",
         "role": "INPUT",
-        "dummy_drop": "DROP",
+        "dummy_drop": "NONE",
         "dummy_clip": "MAX_NB_CATEGORIES",
         "cumulative_proportion": 0.95,
         "sendToInput": "main",
@@ -383,7 +448,7 @@
         "min_samples": 10,
         "missing_impute_with": "MODE",
         "role": "INPUT",
-        "dummy_drop": "DROP",
+        "dummy_drop": "NONE",
         "dummy_clip": "MAX_NB_CATEGORIES",
         "cumulative_proportion": 0.95,
         "sendToInput": "main",
@@ -406,7 +471,7 @@
         "min_samples": 10,
         "missing_impute_with": "MODE",
         "role": "INPUT",
-        "dummy_drop": "DROP",
+        "dummy_drop": "NONE",
         "dummy_clip": "MAX_NB_CATEGORIES",
         "cumulative_proportion": 0.95,
         "sendToInput": "main",
@@ -608,6 +673,7 @@
     "userModified": false
   },
   "script": {
+    "contextProjectKey": "HAIKU_STARTER_FOR_ADMINISTRATOR_TEST_BRANCH_1",
     "columnsSelection": {
       "mode": "ALL"
     },
@@ -785,7 +851,7 @@
       "maxReadUncompressedBytes": -1,
       "samplingMethod": "HEAD_SEQUENTIAL"
     },
-    "ssdTrainingRatio": 0.8,
+    "ssdTrainingRatio": 0.7,
     "ttPolicy": "SPLIT_SINGLE_DATASET",
     "kfold": false
   },
